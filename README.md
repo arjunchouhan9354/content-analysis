@@ -72,6 +72,10 @@ cd server && npm test
 
 ## Limitations / next steps
 
+- **Built within a 30-minute time limit, so I prioritised working features, cost safety and tests over code structure.**
+  - The server is a few flat files: one `app.js` holds both routes, with no separate routes/controllers/services layers.
+  - The UI is a minimal single page with basic styling.
+  - With more time I'd split the server into routes, controllers and services, add request validation middleware, and polish the UI with loading skeletons, rendered formatting and streaming answers.
 - **Scanned (image-only) PDFs** aren't supported. They would need OCR.
 - **Very large documents** (over ~600,000 characters) are rejected. Next step: RAG, meaning chunks, embeddings and vector search, then sending only the relevant parts to Claude.
 - **No login or rate limiting.** It's built as a local tool. Before deploying publicly, add authentication and per-user limits to control API cost.

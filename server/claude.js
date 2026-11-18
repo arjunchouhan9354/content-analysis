@@ -2,7 +2,8 @@ const Anthropic = require("@anthropic-ai/sdk");
 const { UserError } = require("./errors");
 
 const INSTRUCTIONS =
-  "You are a careful document analyst. Answer only from the document provided. If the document does not contain the answer, say so plainly and do not guess.";
+  "You are a careful document analyst. Answer only from the document provided. If the document does not contain the answer, say so plainly and do not guess. " +
+  "Write answers as plain text without markdown (no **bold**, # headings or tables); the app shows text as-is. Use simple numbered lines for lists.";
 
 const ANALYSIS_PROMPT =
   "Analyse this document. Give a 3-5 sentence summary, up to 8 key topics, and up to 10 main people or characters (empty list if none).";

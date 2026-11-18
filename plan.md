@@ -1,8 +1,14 @@
-# Content analysis based on the upload document 
+# Requirement
 
-# Plan
-Content analysis based on the upload document after that we will ask the question based on the uploaded document
+Build a **content analysis** app:
 
-Its a single page application no need to make it complicate make it simple and query prompt for ask question after upload coument and we will keep our document in our current folder for analysis
+1. The user uploads a document.
+2. The app analyses its content.
+3. The user can then ask questions about the uploaded document, and the answers come from that document.
 
-# Deadline : 30 min (3:50 PM)
+Constraints given:
+- A **single-page application**, kept simple: an upload form, the analysis, and a query box for questions.
+- Uploaded documents are stored in the project folder (`uploads/`) for analysis.
+- **Time limit: 30 minutes.**
+
+How this was delivered (supported formats, design decisions, limitations, setup) is described in the [README](README.md).
